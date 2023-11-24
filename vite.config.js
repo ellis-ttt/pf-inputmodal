@@ -1,9 +1,22 @@
-// @ts-ignore
+/** @format */
+
 import { defineConfig } from 'vite'
-// @ts-ignore
 import vue from '@vitejs/plugin-vue'
+import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [vue()],
+    server: {
+        open: true
+    },
+    build: {
+        assetsDir: `src`,
+        outDir: `docs`
+    },
+    resolve: {
+        alias: {
+            '@': fileURLToPath(new URL('./src', import.meta.url))
+        }
+    }
 })

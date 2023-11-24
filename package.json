@@ -1,12 +1,11 @@
 {
     "name": "pf-inputmodal",
-    "packageManager": "yarn@4.0.2",
     "private": true,
     "version": "0.0.0",
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vue-tsc && vite build",
+        "build": "vue-tsc && vite build --base=/pf-inputmodal/",
         "preview": "vite preview"
     },
     "devDependencies": {
