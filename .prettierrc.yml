@@ -12,5 +12,4 @@ printWidth: 80
 singleQuote: true
 experimentalTernaries: true
 quoteProps: as-needed
-insertPragma: true
 vueIndentScriptAndStyle: true
