@@ -7,6 +7,7 @@
         <InputField label="Имя" :required="true" />
         <InputField label="Фамилия" :required="true" />
         <InputField label="Отчество" />
+        <InputField label="Дата рождения" :type="'date'" :required="true" />
     </div>
 </template>
 

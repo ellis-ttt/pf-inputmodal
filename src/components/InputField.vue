@@ -1,6 +1,7 @@
 <script setup lang="ts">
     defineProps<{
         label: string
+        type?: 'date'
         required?: boolean
         minlength?: number
         maxlength?: number
@@ -14,7 +15,7 @@
             {{ `${required ? `*` : ``} ${label}` }}
         </label>
         <input
-            type="text"
+            :type="type || 'text'"
             :id="label"
             :name="label"
             :required="required || undefined"
